@@ -20,9 +20,15 @@ namespace AnalizadorLexico
     /// </summary>
     public partial class MainWindow : Window
     {
+        String[] lexema;
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void btn_ingresar_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }

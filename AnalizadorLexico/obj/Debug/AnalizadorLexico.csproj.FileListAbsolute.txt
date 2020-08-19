@@ -1,0 +1,15 @@
+C:\Users\josue\source\repos\AnalizadorLexico\AnalizadorLexico\bin\Debug\AnalizadorLexico.exe.config
+C:\Users\josue\source\repos\AnalizadorLexico\AnalizadorLexico\bin\Debug\AnalizadorLexico.exe
+C:\Users\josue\source\repos\AnalizadorLexico\AnalizadorLexico\bin\Debug\AnalizadorLexico.pdb
+C:\Users\josue\source\repos\AnalizadorLexico\AnalizadorLexico\obj\Debug\AnalizadorLexico.csprojAssemblyReference.cache
+C:\Users\josue\source\repos\AnalizadorLexico\AnalizadorLexico\obj\Debug\MainWindow.g.cs
+C:\Users\josue\source\repos\AnalizadorLexico\AnalizadorLexico\obj\Debug\App.g.cs
+C:\Users\josue\source\repos\AnalizadorLexico\AnalizadorLexico\obj\Debug\AnalizadorLexico_MarkupCompile.cache
+C:\Users\josue\source\repos\AnalizadorLexico\AnalizadorLexico\obj\Debug\AnalizadorLexico_MarkupCompile.lref
+C:\Users\josue\source\repos\AnalizadorLexico\AnalizadorLexico\obj\Debug\MainWindow.baml
+C:\Users\josue\source\repos\AnalizadorLexico\AnalizadorLexico\obj\Debug\AnalizadorLexico.g.resources
+C:\Users\josue\source\repos\AnalizadorLexico\AnalizadorLexico\obj\Debug\AnalizadorLexico.Properties.Resources.resources
+C:\Users\josue\source\repos\AnalizadorLexico\AnalizadorLexico\obj\Debug\AnalizadorLexico.csproj.GenerateResource.cache
+C:\Users\josue\source\repos\AnalizadorLexico\AnalizadorLexico\obj\Debug\AnalizadorLexico.csproj.CoreCompileInputs.cache
+C:\Users\josue\source\repos\AnalizadorLexico\AnalizadorLexico\obj\Debug\AnalizadorLexico.exe
+C:\Users\josue\source\repos\AnalizadorLexico\AnalizadorLexico\obj\Debug\AnalizadorLexico.pdb
