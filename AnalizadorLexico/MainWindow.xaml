@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AnalizadorLexico"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="ANALIZADOR LÉXICO" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid x:Name="ANALIZADOR_LEXICO">
         <Button x:Name="btn_ingresar" Content="INGRESAR" HorizontalAlignment="Left" Margin="342,330,0,0" VerticalAlignment="Top" Width="158" Height="30" Click="btn_ingresar_Click"/>
         <TextBox x:Name="txt_cadena" HorizontalAlignment="Left" Height="59" Margin="169,252,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="481" FontFamily="Mongolian Baiti" FontSize="18"/>
         <ListView x:Name="listV_palabra" HorizontalAlignment="Left" Height="160" Margin="141,60,0,0" VerticalAlignment="Top" Width="130">
