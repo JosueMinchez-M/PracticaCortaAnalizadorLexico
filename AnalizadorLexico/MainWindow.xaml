@@ -7,24 +7,33 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="btn_ingresar" Content="INGRESAR" HorizontalAlignment="Left" Margin="344,297,0,0" VerticalAlignment="Top" Width="158" Height="30" Click="btn_ingresar_Click"/>
-        <TextBox x:Name="txt_cadena" HorizontalAlignment="Left" Height="26" Margin="221,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="378" FontFamily="Segoe UI Black" FontSize="15"/>
-        <ListView HorizontalAlignment="Left" Height="142" Margin="100,70,0,0" VerticalAlignment="Top" Width="605">
+        <Button x:Name="btn_ingresar" Content="INGRESAR" HorizontalAlignment="Left" Margin="342,330,0,0" VerticalAlignment="Top" Width="158" Height="30" Click="btn_ingresar_Click"/>
+        <TextBox x:Name="txt_cadena" HorizontalAlignment="Left" Height="26" Margin="169,285,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="481" FontFamily="Mongolian Baiti" FontSize="18"/>
+        <ListView x:Name="listV_palabra" HorizontalAlignment="Left" Height="160" Margin="141,60,0,0" VerticalAlignment="Top" Width="130">
             <ListView.View>
                 <GridView>
-
-                    <GridViewColumn DisplayMemberBinding=
-                          "{Binding Path=FirstName}" 
-                      Header="PALABRA" Width="150"/>
-                    <GridViewColumn DisplayMemberBinding=
-                          "{Binding Path=FirstName}" 
-                      Header="NO. ENTERO" Width="150"/>
-                    <GridViewColumn DisplayMemberBinding=
-                          "{Binding Path=FirstName}" 
-                      Header="NO. DECIMAL" Width="150"/>
-                    <GridViewColumn DisplayMemberBinding=
-                          "{Binding Path=FirstName}" 
-                      Header="MONEDA" Width="150"/>
+                    <GridViewColumn Header="PALABRAS" Width="125"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ListView x:Name="listV_numEntero" HorizontalAlignment="Left" Height="160" Margin="271,60,0,0" VerticalAlignment="Top" Width="130">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="NUMEROS ENTEROS" Width="125"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ListView x:Name="listV_numDecimal" HorizontalAlignment="Left" Height="160" Margin="401,60,0,0" VerticalAlignment="Top" Width="130">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="NUMEROS DECIMALES" Width="125"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ListView x:Name="listV_moneda" HorizontalAlignment="Left" Height="160" Margin="531,60,0,0" VerticalAlignment="Top" Width="130">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="MONEDA" Width="125"/>
                 </GridView>
             </ListView.View>
         </ListView>

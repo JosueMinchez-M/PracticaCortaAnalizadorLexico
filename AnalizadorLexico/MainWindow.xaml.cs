@@ -1,17 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace AnalizadorLexico
 {
@@ -21,20 +10,36 @@ namespace AnalizadorLexico
     public partial class MainWindow : Window
     {
         String[] lexema;
+
         public MainWindow()
         {
             InitializeComponent();
-
         }
 
         private void btn_ingresar_Click(object sender, RoutedEventArgs e)
         {
+            listV_palabra.Items.Clear();
+            listV_numEntero.Items.Clear();
+            listV_numDecimal.Items.Clear();
+            listV_moneda.Items.Clear();
+
             //Separa las palabras de la oracion cuando hay un espacio
             lexema = txt_cadena.Text.Split(' ');
-            foreach (var lexema in lexema)
+            for (int i = 0; i < lexema.Length; i++)
             {
-                System.Console.WriteLine($"<{lexema}>");
+                if (Regex.IsMatch(lexema[i], @"^[a-zA-Z]+$"))
+                {
+                    listV_palabra.Items.Add(lexema[i]);
+                }else if (Regex.IsMatch(lexema[i], @"^[0-9]+$"))
+                {
+                    listV_numEntero.Items.Add(lexema[i]);
+                }
+                //System.Console.WriteLine(lexema[i]);
             }
+//            foreach (var lexema in lexema)
+//            {
+//                System.Console.WriteLine($"<{lexema}>");
+//            }
             //se captura el valor de la caja de texto txt_cadena
             Console.WriteLine(txt_cadena.Text);
         }
