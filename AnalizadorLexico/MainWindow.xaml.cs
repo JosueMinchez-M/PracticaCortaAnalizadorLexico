@@ -24,11 +24,19 @@ namespace AnalizadorLexico
         public MainWindow()
         {
             InitializeComponent();
+
         }
 
         private void btn_ingresar_Click(object sender, RoutedEventArgs e)
         {
-            
+            //Separa las palabras de la oracion cuando hay un espacio
+            lexema = txt_cadena.Text.Split(' ');
+            foreach (var lexema in lexema)
+            {
+                System.Console.WriteLine($"<{lexema}>");
+            }
+            //se captura el valor de la caja de texto txt_cadena
+            Console.WriteLine(txt_cadena.Text);
         }
     }
 }

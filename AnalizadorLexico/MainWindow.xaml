@@ -8,14 +8,26 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Button x:Name="btn_ingresar" Content="INGRESAR" HorizontalAlignment="Left" Margin="344,297,0,0" VerticalAlignment="Top" Width="158" Height="30" Click="btn_ingresar_Click"/>
-        <ListView HorizontalAlignment="Left" Height="100" Margin="66,113,0,0" VerticalAlignment="Top" Width="676">
+        <TextBox x:Name="txt_cadena" HorizontalAlignment="Left" Height="26" Margin="221,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="378" FontFamily="Segoe UI Black" FontSize="15"/>
+        <ListView HorizontalAlignment="Left" Height="142" Margin="100,70,0,0" VerticalAlignment="Top" Width="605">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn/>
+
+                    <GridViewColumn DisplayMemberBinding=
+                          "{Binding Path=FirstName}" 
+                      Header="PALABRA" Width="150"/>
+                    <GridViewColumn DisplayMemberBinding=
+                          "{Binding Path=FirstName}" 
+                      Header="NO. ENTERO" Width="150"/>
+                    <GridViewColumn DisplayMemberBinding=
+                          "{Binding Path=FirstName}" 
+                      Header="NO. DECIMAL" Width="150"/>
+                    <GridViewColumn DisplayMemberBinding=
+                          "{Binding Path=FirstName}" 
+                      Header="MONEDA" Width="150"/>
                 </GridView>
             </ListView.View>
         </ListView>
-        <TextBox x:Name="txt_cadena" HorizontalAlignment="Left" Height="26" Margin="221,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="378" FontFamily="Segoe UI Black" FontSize="15"/>
 
     </Grid>
 </Window>
